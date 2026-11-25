@@ -1,0 +1,13 @@
+{
+  "$comment": "Elenco dei progetti mostrati in /legal/. privacy/terms sono opzionali: di default /legal/<slug>/privacy.html e /legal/<slug>/terms.html; usa null per nascondere un pulsante. Schema nel README.",
+  "projects": [
+    {
+      "slug": "vps-backup",
+      "name": "vps-backup",
+      "category": "Tool",
+      "description": "Strumento personale per il backup cifrato del mio server su Google Drive.",
+      "icon": "/assets/icons/vps-backup.svg",
+      "updated": "2026-09-16"
+    }
+  ]
+}

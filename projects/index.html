@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progetti · Giovanni Zaccaria</title>
+  <meta name="description" content="Progetti, tool e web app di Giovanni Zaccaria (LoZack19).">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <script src="/assets/js/theme.js"></script>
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/cards.js" defer></script>
+</head>
+<body data-breadcrumb='[{"label":"Progetti"}]'>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+  <header data-site-header>
+    <noscript><div class="noscript-nav"><a href="/">Home</a> · <a href="/projects/">Progetti</a> · <a href="/legal/">Legal</a> · <a href="/resources/">Risorse</a></div></noscript>
+  </header>
+  <nav data-breadcrumb></nav>
+
+  <main id="main">
+    <div class="container">
+      <header class="page-head">
+        <span class="eyebrow">/projects</span>
+        <h1>Progetti</h1>
+        <p class="lead">Portfolio, strumenti e piccole web app statiche ospitate direttamente qui.</p>
+      </header>
+
+      <ul class="card-grid" data-cards="projects" data-src="/projects/projects.json">
+        <li class="card-state">Caricamento…</li>
+      </ul>
+      <noscript>
+        <ul class="link-list">
+          <li><a href="/projects/vps-backup/"><span>vps-backup<small>Backup cifrato del server su Google Drive</small></span>→</a></li>
+        </ul>
+      </noscript>
+    </div>
+  </main>
+
+  <footer data-site-footer></footer>
+</body>
+</html>

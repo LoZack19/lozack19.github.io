@@ -1,0 +1,14 @@
+{
+  "$comment": "Elenco dei progetti mostrati in /projects/ e (se featured) in home. Schema nel README.",
+  "projects": [
+    {
+      "slug": "vps-backup",
+      "name": "vps-backup",
+      "category": "Tool",
+      "description": "Strumento personale per il backup cifrato del mio server su Google Drive.",
+      "icon": "/assets/icons/vps-backup.svg",
+      "tags": ["Google Drive", "Backup", "Crittografia"],
+      "featured": true
+    }
+  ]
+}

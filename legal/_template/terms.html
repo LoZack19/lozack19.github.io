@@ -1,0 +1,100 @@
+<!doctype html>
+<!--
+  TEMPLATE TERMINI DI SERVIZIO
+  Stessi segnaposto di privacy.html: vedi le istruzioni in quel file o nel README.
+-->
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">  <!-- RIMUOVI nel documento reale -->
+  <title>Termini di Servizio · {{NOME}}</title>
+  <meta name="description" content="Termini di Servizio di {{NOME}}.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <script src="/assets/js/theme.js"></script>
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/legal.css">
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body data-breadcrumb='[{"label":"Legal","href":"/legal/"},{"label":"{{NOME}}","href":"/legal/#{{SLUG}}"},{"label":"Termini"}]'>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+  <header data-site-header>
+    <noscript><div class="noscript-nav"><a href="/">Home</a> · <a href="/legal/">Legal</a> · <a href="/legal/{{SLUG}}/privacy.html">Privacy Policy</a></div></noscript>
+  </header>
+  <nav data-breadcrumb></nav>
+
+  <main id="main">
+    <div class="container">
+      <div class="doc-layout">
+        <nav data-toc></nav>
+
+        <article>
+          <header class="doc-header">
+            <div class="doc-header-top">
+              <div class="project-icon project-icon-lg">
+                <img src="/assets/icons/{{SLUG}}.svg" alt="" width="64" height="64" onerror="this.onerror=null;this.src='/assets/icons/fallback.svg'">
+              </div>
+              <div>
+                <div class="doc-project">{{NOME}} <span class="badge" data-category="{{categoria-slug}}">{{CATEGORIA}}</span></div>
+                <h1>Termini di Servizio</h1>
+              </div>
+            </div>
+            <dl class="doc-meta">
+              <div><dt>Ultimo aggiornamento</dt><dd><time datetime="{{DATA_ISO}}">{{DATA}}</time></dd></div>
+            </dl>
+            <div class="doc-actions">
+              <a class="btn btn-sm" href="/legal/{{SLUG}}/privacy.html">Privacy Policy →</a>
+              <button class="btn btn-sm" type="button" onclick="window.print()">Stampa / PDF</button>
+            </div>
+          </header>
+
+          <div class="prose">
+            <p class="note"><strong>Template.</strong> Sostituisci i testi tra parentesi quadre e rimuovi questo riquadro.</p>
+
+            <h2>Accettazione dei termini</h2>
+            <p>Utilizzando {{NOME}} accetti i presenti Termini di Servizio. Se non li accetti, non utilizzare il servizio.</p>
+
+            <h2>Descrizione del servizio</h2>
+            <p>[Cosa fa il servizio, a chi è rivolto, se è gratuito.]</p>
+
+            <h2>Uso consentito</h2>
+            <p>L'utente si impegna a non:</p>
+            <ul>
+              <li>usare il servizio per attività illecite o per inviare spam;</li>
+              <li>tentare di comprometterne il funzionamento o la sicurezza;</li>
+              <li>[altri divieti specifici].</li>
+            </ul>
+
+            <h2>Disponibilità</h2>
+            <p>
+              Il servizio è fornito "così com'è" e può essere modificato, sospeso o interrotto
+              in qualsiasi momento senza preavviso.
+            </p>
+
+            <h2>Limitazione di responsabilità</h2>
+            <p>[Nei limiti consentiti dalla legge, l'autore non è responsabile per danni derivanti dall'uso del servizio.]</p>
+
+            <h2>Privacy</h2>
+            <p>Il trattamento dei dati è descritto nella <a href="/legal/{{SLUG}}/privacy.html">Privacy Policy</a>.</p>
+
+            <h2>Modifiche ai termini</h2>
+            <p>I termini possono essere aggiornati. La data di ultimo aggiornamento è indicata in cima alla pagina.</p>
+
+            <h2>Contatti</h2>
+            <p>Per qualsiasi domanda: [contatto].</p>
+          </div>
+
+          <footer class="doc-footer">
+            <p>Vedi anche la <a href="/legal/{{SLUG}}/privacy.html">Privacy Policy</a> di {{NOME}}.</p>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer data-site-footer></footer>
+</body>
+</html>

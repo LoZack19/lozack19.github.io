@@ -1,0 +1,120 @@
+<!doctype html>
+<!--
+  TEMPLATE PRIVACY POLICY
+  1. Copia la cartella /legal/_template/ in /legal/<slug>/
+  2. Cerca e sostituisci in entrambi i file:
+       {{SLUG}}            es. meteo-bot
+       {{NOME}}            es. Meteo Bot
+       {{CATEGORIA}}       es. Telegram Bot
+       {{categoria-slug}}  es. telegram-bot
+       {{DATA_ISO}}        es. 2026-11-25
+       {{DATA}}            es. 25 novembre 2026
+  3. Adatta i testi qui sotto (rimuovi le sezioni che non servono)
+  4. Rimuovi il meta robots noindex e il riquadro "Template"
+  5. Aggiungi la voce in /legal/projects.json
+-->
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">  <!-- RIMUOVI nel documento reale -->
+  <title>Privacy Policy · {{NOME}}</title>
+  <meta name="description" content="Privacy Policy di {{NOME}}.">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <script src="/assets/js/theme.js"></script>
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/legal.css">
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body data-breadcrumb='[{"label":"Legal","href":"/legal/"},{"label":"{{NOME}}","href":"/legal/#{{SLUG}}"},{"label":"Privacy"}]'>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+  <header data-site-header>
+    <noscript><div class="noscript-nav"><a href="/">Home</a> · <a href="/legal/">Legal</a> · <a href="/legal/{{SLUG}}/terms.html">Termini di Servizio</a></div></noscript>
+  </header>
+  <nav data-breadcrumb></nav>
+
+  <main id="main">
+    <div class="container">
+      <div class="doc-layout">
+        <nav data-toc></nav>
+
+        <article>
+          <header class="doc-header">
+            <div class="doc-header-top">
+              <div class="project-icon project-icon-lg">
+                <img src="/assets/icons/{{SLUG}}.svg" alt="" width="64" height="64" onerror="this.onerror=null;this.src='/assets/icons/fallback.svg'">
+              </div>
+              <div>
+                <div class="doc-project">{{NOME}} <span class="badge" data-category="{{categoria-slug}}">{{CATEGORIA}}</span></div>
+                <h1>Privacy Policy</h1>
+              </div>
+            </div>
+            <dl class="doc-meta">
+              <div><dt>Ultimo aggiornamento</dt><dd><time datetime="{{DATA_ISO}}">{{DATA}}</time></dd></div>
+            </dl>
+            <div class="doc-actions">
+              <a class="btn btn-sm" href="/legal/{{SLUG}}/terms.html">Termini di Servizio →</a>
+              <button class="btn btn-sm" type="button" onclick="window.print()">Stampa / PDF</button>
+            </div>
+          </header>
+
+          <div class="prose">
+            <p class="note"><strong>Template.</strong> Sostituisci i testi tra parentesi quadre e rimuovi questo riquadro.</p>
+
+            <h2>Titolare del trattamento</h2>
+            <p>
+              Il titolare del trattamento è Giovanni Zaccaria (LoZack19), sviluppatore di {{NOME}}.
+              Contatto: [email o link al profilo].
+            </p>
+
+            <h2>Dati raccolti</h2>
+            <p>{{NOME}} tratta i seguenti dati:</p>
+            <ul>
+              <li>[Es. ID utente e nome utente forniti dalla piattaforma]</li>
+              <li>[Es. messaggi o comandi inviati al bot, solo per elaborare la risposta]</li>
+              <li>[Es. preferenze impostate dall'utente]</li>
+            </ul>
+            <p>[Indica esplicitamente cosa NON viene raccolto.]</p>
+
+            <h2>Finalità del trattamento</h2>
+            <p>[Per cosa servono i dati: fornire il servizio, ricordare le preferenze, prevenire abusi…]</p>
+
+            <h2>Conservazione</h2>
+            <p>[Per quanto tempo vengono conservati e come vengono cancellati.]</p>
+
+            <h2>Condivisione con terzi</h2>
+            <p>[Servizi esterni usati (hosting, API) o "I dati non vengono condivisi con terzi".]</p>
+
+            <h2>Diritti dell'utente</h2>
+            <p>
+              Puoi chiedere in qualsiasi momento l'accesso, la rettifica o la cancellazione dei tuoi dati
+              [indica come: comando /deletedata, email…].
+            </p>
+
+            <h2>Sicurezza</h2>
+            <p>[Misure adottate: cifratura, accesso limitato…]</p>
+
+            <h2>Modifiche</h2>
+            <p>
+              Questa informativa può essere aggiornata. La data di ultimo aggiornamento è indicata
+              in cima alla pagina.
+            </p>
+
+            <h2>Contatti</h2>
+            <p>Per qualsiasi domanda: [contatto].</p>
+          </div>
+
+          <footer class="doc-footer">
+            <p>Vedi anche i <a href="/legal/{{SLUG}}/terms.html">Termini di Servizio</a> di {{NOME}}.</p>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer data-site-footer></footer>
+</body>
+</html>
