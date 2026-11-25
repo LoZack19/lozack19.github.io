@@ -2,6 +2,15 @@
   "$comment": "Elenco dei progetti mostrati in /projects/ e (se featured) in home. Schema nel README.",
   "projects": [
     {
+      "slug": "infra-librarian",
+      "name": "Infra-Librarian",
+      "category": "Discord Bot",
+      "description": "Bot Discord per consultare documentazione e risorse sull'infrastruttura direttamente dal server.",
+      "icon": "/assets/icons/infra-librarian.svg",
+      "tags": ["Discord", "Bot", "Documentazione"],
+      "featured": true
+    },
+    {
       "slug": "vps-backup",
       "name": "vps-backup",
       "category": "Tool",

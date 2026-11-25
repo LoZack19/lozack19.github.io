@@ -2,6 +2,14 @@
   "$comment": "Elenco dei progetti mostrati in /legal/. privacy/terms sono opzionali: di default /legal/<slug>/privacy.html e /legal/<slug>/terms.html; usa null per nascondere un pulsante. Schema nel README.",
   "projects": [
     {
+      "slug": "infra-librarian",
+      "name": "Infra-Librarian",
+      "category": "Discord Bot",
+      "description": "Bot Discord per consultare documentazione e risorse sull'infrastruttura direttamente dal server.",
+      "icon": "/assets/icons/infra-librarian.svg",
+      "updated": "2026-11-25"
+    },
+    {
       "slug": "vps-backup",
       "name": "vps-backup",
       "category": "Tool",
